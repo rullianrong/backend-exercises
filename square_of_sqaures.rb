@@ -1,7 +1,7 @@
 # Given an integral number, determine if it's a square number.
 
 # Solution using digital root
-def get_digital_root(number) 
+def get_digital_root(number)
     sum = 0
     number.digits.each { |digit| sum += digit }
     sum.to_s.length != 1 ? get_digital_root(sum) : sum
