@@ -1,23 +1,17 @@
 class Person
+    attr_accessor :name, :age, :gender
+
     def initialize(name, age, gender)
         @name = name
         @age = age
         @gender = gender
     end
 
-    def name
-        @name
-    end
-
-    def age
-        @age
-    end
-
-    def gender
-        @gender
-    end
-
     def greet
-        puts "Hi!"
+        puts "Hello"
     end
 end
+
+
+rullian = Person.new("Rullian Rong", 26, "Male")
+puts rullian.greet
