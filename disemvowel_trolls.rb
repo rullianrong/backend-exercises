@@ -1,5 +1,5 @@
 def disemvowel(str)
-    str.delete('aeiouAEIOU')
+    str.gsub /[aeiou]/i, ''
 end
 
 puts disemvowel("This website is for losers LOL!")
